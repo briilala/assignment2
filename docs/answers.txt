@@ -1,0 +1,21 @@
+E(a). Enumerating objects: 5, done.
+      Counting objects: 100% (5/5), done.
+      Delta compression using up to 4 threads
+      Compressing objects: 100% (2/2), done.
+      Writing objects: 100% (3/3), 370 bytes | 370.00 KiB/s, done.
+      Total 3 (delta 1), reused 0 (delta 0)
+      remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+      To https://github.com/briilala/assignment2.git
+        f4975e5..af16b70  master -> master
+
+E(b). 8 commits: "git log"
+E(c). Wed Sep 25 18:13:30 2019 -0400 : "git log --follow .gitignore"
+E(d). Better support for developers working in parallel.
+      Make sure the code changes are verified before delivering them to other developers.
+E(e). "git log" outputs the history of the repository while "git status" outputs the status of the current working directory..
+E(f). git log --follow Vehicle.h
+E(g). git log --grep="file"
+E(h). In the context of object-oriented programming (I) What is inheritance? (II) What is
+polymorphism? (III) What is encapsulation?
+E(i).
+E(j).
