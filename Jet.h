@@ -1,13 +1,16 @@
+#include "PoweredVehicle.h"
 
-
-#ifndef DRIVINGSIMULATOR_BICYCLE_H
-#define DRIVINGSIMULATOR_BICYCLE_H
-
-#include "Vehicle.h"
-
-class Jet : pubic PoweredVehicle
+class Jet : public PoweredVehicle
 {
   private:
     int numberOfEngines;
-    int milage;
-}
+
+  public:
+    Jet();
+    explicit Jet(string brand, string model, string fuelType, int numberOfEngines = 1);
+    virtual ~Jet();
+    int getNumberOfEngines();
+    void setNumberOfEngines(int numberOfEngine);
+    virtual double mileageEstimate(double time);
+    virtual string toString();
+};

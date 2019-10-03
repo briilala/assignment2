@@ -1,14 +1,12 @@
-#ifndef DRIVINGSIMULATOR_BICYCLE_H
-#define DRIVINGSIMULATOR_BICYCLE_H
+#include "Vehicle.h"
 
-#include "Skateboard.h"
-
-class Skateboard : public Skateboard
+class Skateboard : public Vehicle
 {
 
-private:
-    int mileage;
-
 public:
+  explicit Skateboard(string brand, string model);
+  virtual ~Skateboard();
+  virtual double mileageEstimate(double time);
+  virtual string toString();
 
-}
+};

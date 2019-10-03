@@ -14,7 +14,6 @@ private:
 
 public:
     explicit Bicycle(string brand, string model, int gearCount = 1);
-
     virtual ~Bicycle();
     int getGearCount();
     void setGearCount(int gearCount);
