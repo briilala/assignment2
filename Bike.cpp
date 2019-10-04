@@ -37,6 +37,6 @@ double Bike::mileageEstimate(double time)
 
 string Bike::toString()
 {
-  return "-> Jet\n" + PoweredVehicle::toString() + "\n\tmaxSpeed: " +
+  return "-> Bike\n" + PoweredVehicle::toString() + "\n\tmaxSpeed: " +
          to_string(getmaxSpeed());
 }

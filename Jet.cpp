@@ -29,14 +29,13 @@ void Jet::setNumberOfEngines(int numberOfEngine)
 double Jet::mileageEstimate(double time)
 {
   double mileage = rand() % 61 + 40;
-  if(getNumberOfEngines() > 2 && fuelType == "Rocket")
+  if(numberOfEngines > 2 && fuelType == "Rocket")
   {
-    mileage += numberOfEngines * 0.055;
+    double num = numberOfEngines * 0.055;
+    num *= mileage;
+    mileage += num;
   }
-    return mileage;  //A random number between 40 and 100 miles per minute.
-    //If the Jet has more than 2 engines and the fuel type is “Rocket”,
-    //the mileage will be boosted by 5.5% per engine. Jet inherits from
-    //the PoweredVehicle class.
+    return mileage;  
 }
 string Jet::toString() {
   return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of Engines: " +

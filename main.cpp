@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 #include "Car.h"
 #include "Bicycle.h"
 #include "Vehicle.h"
@@ -23,7 +24,7 @@ int main() {
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
     vehiclesArray[6] = new Jet();
-    vehiclesArray[7] = new Jet("Brango", "G5", "solar", 9);
+    vehiclesArray[7] = new Jet("Brango", "G5", "Rocket", 9);
     vehiclesArray[8] = new Skateboard("vet", "bat");
     vehiclesArray[9] = new Skateboard("TMX", "Velvo");
     vehiclesArray[10] = new Bike();
