@@ -26,7 +26,7 @@ void Jet::setNumberOfEngines(int numberOfEngine)
 {
   numberOfEngines = numberOfEngine;
 }
-double Jet::mileageEstimate(double time)
+double Jet::mileageEstimate(double time) //based on equation using andom number generator.
 {
   double mileage = rand() % 61 + 40;
   if(numberOfEngines > 2 && fuelType == "Rocket")

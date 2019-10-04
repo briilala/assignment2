@@ -27,7 +27,7 @@ int Bike::getmaxSpeed()
   return maxSpeed;
 }
 
-double Bike::mileageEstimate(double time)
+double Bike::mileageEstimate(double time) //based on equation using andom number generator.
 {
   double mileage = rand() % 46 + 35;
   if(maxSpeed > 70)

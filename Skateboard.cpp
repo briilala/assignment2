@@ -9,7 +9,7 @@ Skateboard::Skateboard(string brand, string model)
 
 Skateboard::~Skateboard() = default;
 
-double Skateboard::mileageEstimate(double time)  //not sure
+double Skateboard::mileageEstimate(double time) //based on equation using andom number generator.
 {
   double mileage = rand() % 5 + 1;
   mileage /= 10;
