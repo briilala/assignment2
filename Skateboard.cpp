@@ -18,10 +18,9 @@ double Skateboard::mileageEstimate(double time)  //not sure
   {
     double max = 0.33333 * time;
     mileage = (double)rand() / RAND_MAX;
-    return 1 + mileage * (max - 1);
+    mileage = 1 + mileage * (max - 1);
   }
-
-    return mileage;
+    return (int)mileage;
 }
 
 string Skateboard::toString() {

@@ -32,7 +32,7 @@ double Bike::mileageEstimate(double time)
   double mileage = rand() % 46 + 35;
   if(maxSpeed > 70)
     mileage += time/maxSpeed;
-    return mileage;
+    return (int)mileage;
 }
 
 string Bike::toString()

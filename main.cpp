@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <cmath>
 #include "Car.h"
 #include "Bicycle.h"
 #include "Vehicle.h"
