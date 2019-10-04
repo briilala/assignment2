@@ -1,0 +1,29 @@
+E(a). Enumerating objects: 5, done.
+      Counting objects: 100% (5/5), done.
+      Delta compression using up to 4 threads
+      Compressing objects: 100% (2/2), done.
+      Writing objects: 100% (3/3), 370 bytes | 370.00 KiB/s, done.
+      Total 3 (delta 1), reused 0 (delta 0)
+      remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+      To https://github.com/briilala/assignment2.git
+        f4975e5..af16b70  master -> master
+
+E(b). 8 commits: "git log"
+E(c). Wed Sep 25 18:13:30 2019 -0400 : "git log --follow .gitignore"
+E(d). Better support for developers working in parallel.
+      Make sure the code changes are verified before delivering them to other developers.
+E(e). "git log" outputs the history of the repository while "git status" outputs the status of the current working directory.
+E(f). git log --follow Vehicle.h
+E(g). git log --grep="file"
+E(h). Inheritance is mechanism by which an object acquires the some/all properties of another object. It supports the concept of hierarchical classification.
+      Polymorphism is changing the behavior. Treating objects of different objects in a similar manner. It is the result of inheritance.
+      Encapsulation is binding the data with the code that manipulates it. It keeps the data and the code safe from external interference.
+E(i). The Dictator and Lieutenants workflow is where lieutenants are in charge of a specific subsystem of the projects and they merge in their changes to that subsystem.
+      Then the dictator can pull changes from only his/her lieutenants and then push to the blessed repository that everyone then clones from again.
+      The integration is where one person commits to the 'blessed' repository. There are a number of developers who can clone from that repository, push to their
+      own independent repositories and ask the integrator to pull in their changes. The Dictator and Lieutenant workflow is mostly used for massive projects.
+E(j). Developers would benefit from following the Dictator and Lieutenant workflow because it allows the project leader (the dictator) to delegate much of the
+      work and collect large subsets of code at multiple points before integrating them.
+
+5.    The prototype is using Polymorphism. The objects are processed based on their data types.
+      For example, the derived classes overrides the mileageEstimate function in the base class, which is an aspect of polymorphism.

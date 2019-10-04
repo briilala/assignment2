@@ -1,13 +1,21 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <cmath>
 #include "Car.h"
 #include "Bicycle.h"
-
+#include "Vehicle.h"
+#include "Jet.h"
+#include "Skateboard.h"
+#include "Bike.h"
+using namespace std;
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
-    std::cout << "Driving simulator" << std::endl;
-    int size = 6;
-    int capacity = 10;
+    srand(time(0));
+    cout << "Driving simulator" << endl;
+    int size = 12;
+    int capacity = 15;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
     vehiclesArray[0] = new Car();
@@ -16,6 +24,12 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
+    vehiclesArray[6] = new Jet();
+    vehiclesArray[7] = new Jet("Brango", "G5", "Rocket", 9);
+    vehiclesArray[8] = new Skateboard("vet", "bat");
+    vehiclesArray[9] = new Skateboard("TMX", "Velvo");
+    vehiclesArray[10] = new Bike();
+    vehiclesArray[11] = new Bike("BMW", "KB00R", "93", 135);
 
     printVehiclesRoster(vehiclesArray, size);
 
@@ -29,7 +43,8 @@ int main() {
     return 0;
 }
 
-void printVehiclesRoster(Vehicle **vehicles, int size) {
+void printVehiclesRoster(Vehicle **vehicles, int size)
+{
     double simulatedDistance = 130;
     for (int i = 0; i < size; i++) {
         cout << i << " " << vehicles[i]->toString() << endl;
